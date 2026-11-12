@@ -3,12 +3,3 @@ kustomize:
   dir: .
 helm:
   takeOwnership: true
-diff:
-  comparePatches:
-  - apiVersion: v1
-    kind: PersistentVolumeClaim
-    name: v-79d0193de082742c
-    namespace: actualbudget
-    operations:
-    - op: remove
-      path: /spec/volumeName
